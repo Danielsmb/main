@@ -2,28 +2,15 @@
   "version": 2,
   "name": "gambarcsline",
   "builds": [
-    {
-      "src": "**/*.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "**/*.css",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "**/*.js",
-      "use": "@vercel/static"
-    }
+    { "src": "/*.html", "use": "@vercel/static" },
+    { "src": "/*.css", "use": "@vercel/static" },
+    { "src": "**/*.js", "use": "@vercel/static" }
   ],
   "routes": [
     { "src": "/style.css", "dest": "/style.css" },
     { "src": "/script.js", "dest": "/script.js" },
     { "src": "/betting", "dest": "/betting.html" },
-    { "src": "/event", "dest": "/event.html" },
-    { "src": "/deposit", "dest": "/deposit.html" },
-    { "src": "/pltest", "dest": "/pltest.html" },
     { "src": "/bank", "dest": "/bank.html" },
-    { "src": "/qris", "dest": "/qris.html" },
     { "src": "/(.*)", "dest": "/$1" }
   ],
   "headers": [
